@@ -65,7 +65,7 @@ export default function Home() {
           <button onClick={handleSubmit} className="btn">
             Google Search
           </button>
-          <button className="btn ">I'm Feeling Lucky</button>
+          <button className="btn ">I am Feeling Lucky</button>
         </div>
       </form>
 
