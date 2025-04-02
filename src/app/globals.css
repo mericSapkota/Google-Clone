@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@layer {
+  .link {
+    @apply hover:underline cursor-pointer;
+  }
+  .btn {
+    @apply bg-[#eaecee] text-gray-800 font-bold py-2 
+    px-4 rounded-lg outline-none ring-gray-300 
+    hover:ring-1 active:ring-gray-800 hover:shadow-lg;
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -12,15 +23,18 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+.bg-primary {
+  background-color: #007bff;
 }
