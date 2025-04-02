@@ -5,7 +5,6 @@ import SearchResults from "../../../components/SearchResults";
 import Response from "../../../Response";
 
 export const generateMetadata = ({ searchParams }) => {
-  console.log("metadata", searchParams); // Check if searchParams is passed correctly
   return {
     title: `${searchParams?.term || "Search"} - Google Search`,
     description: "Search page",
@@ -14,7 +13,7 @@ export const generateMetadata = ({ searchParams }) => {
 
 export default async function Search({ searchParams }) {
   const term = searchParams?.term || "";
-  const dummyData = true;
+  const dummyData = false;
   const startIndex = searchParams?.start || "0";
 
   const results = dummyData

@@ -1,8 +1,6 @@
 import React from "react";
 
 const SearchResults = ({ results }) => {
-  console.log("Search Results:", results); // Check if results are passed correctly
-
   return (
     <>
       <div className="">

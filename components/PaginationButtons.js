@@ -8,7 +8,6 @@ const PaginationButtons = () => {
   const searchParams = useSearchParams();
   const startIndex = Number(searchParams.get("start")) || "0";
   const term = searchParams.get("term") || "nothjing";
-  console.log(startIndex, term); // Check if startIndex and term are passed correctly
 
   return (
     <div className="flex gap-48 max-w-xl  text-blue-700 mb-8 px-8">
